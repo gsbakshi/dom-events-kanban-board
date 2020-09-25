@@ -3,20 +3,84 @@
 <head>
 	<title>Javascript + DOM</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<!-- Bootstrap CSS CDN -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+		integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<!-- Raleway Google Fonts API -->
+	<link
+		href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+		rel="stylesheet">
 </head>
 <body>
-	<h1>Shopping List</h1>
-	<p id="first">Get it done today</p>
-	<input id="userinput" type="text" placeholder="enter items">
-	<button id="enter">Enter</button>
-	<ul id="myList">
-		<li>Notebook</li>
-		<li>Jello</li>
-		<li>Spinach</li>
-		<li>Rice</li>
-		<li>Birthday Cake</li>
-		<!-- <li>Candles  <button id="delete">Delete</button></li> -->
-	</ul>
+	<header>
+		<nav class="navbar sticky-top pl-5 pr-5 shade" style="background-color: #303338;">
+			<a class="navbar-brand title" href="#">Kanban Board</a>
+		</nav>
+	</header>
+
+	<div class="content">
+		<div class="d-flex flex-wrap position-relative">
+			<div class="col-12 col-sm-6 col-lg-4">
+				<div class="card-base">
+					<h5 class="trans">Title</h5>
+					<div>
+						<input class="trans" id="userinput" type="text" placeholder="enter items">
+						<button id="enter">Enter</button>
+					</div>
+					<ul id="myList">
+						<li>Notebook</li>
+						<li>Jello</li>
+						<li>Spinach</li>
+						<li>Rice</li>
+						<li>Birthday Cake</li>
+						<li>Candles <button id="delete">Delete</button></li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-4">
+				<div class="card-base"></div>
+			</div>
+			<div class="col-12 col-sm-6 col-lg-4">
+				<div class="card-base"></div>
+			</div>
+		</div>		
+	</div>
+
+	<!-- <nav class="navbar pl-5 pr-5 shadow" style="background-color: #474A4F;">
+		<a href="index.html" class="navbar-brand logo title">Kanban Board</a>
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar7">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="navbar-collapse collapse justify-content-stretch" id="navbar7">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item">
+					<a class="nav-link" href="https://unsplash.com/explore" target="_blank">Explore</a>
+				</li>
+				<li class="nav-item dropdown active">
+					<a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
+						data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						Dropdown link
+					</a>
+					<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						<a class="dropdown-item" href="#">Slideshow</a>
+						<a class="dropdown-item" href="#">Grid View</a>
+					</div>
+				</li>
+			</ul>
+		</div>
+	</nav> -->
+
 	<script type="text/javascript" src="script.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+		integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"></script>
 </body>
 </html>

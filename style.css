@@ -1,21 +1,42 @@
-.coolTitle {
-  text-align: center;
-  font-family: 'Oswald', Helvetica, sans-serif;
-  font-size: 40px;
-  transform: skewY(-10deg);
-  letter-spacing: 4px;
-  word-spacing: -8px;
-  color: tomato;
-  text-shadow: 
-    -1px -1px 0 firebrick,
-    -2px -2px 0 firebrick,
-    -3px -3px 0 firebrick,
-    -4px -4px 0 firebrick,
-    -5px -5px 0 firebrick,
-    -6px -6px 0 firebrick,
-    -7px -7px 0 firebrick,
-    -8px -8px 0 firebrick,
-    -30px 20px 40px dimgrey;
+* {
+  color: #FFFFFF;
+  font-family: 'Raleway', sans-serif;
+  background-color: #36393E;
+}
+
+.title {
+  color: #FFFFFF;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.shade {
+    /* -webkit-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.6);
+    -moz-box-shadow: 0px 0px 4px 0px rgba(0,0,0,0.6); */
+    box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.6);
+
+    /* the rest of your styling */
+}
+
+.content {
+  padding: 2rem;
+}
+
+.card-base {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  height: 300px;
+  margin-top: 30px;
+  border-radius: 8px;
+  background-color: #474A4F;
+  box-shadow: -2px -2px 10px 0px rgba(0,0,0,0.16);
+  padding: 30px;
 }
 
 .done {
@@ -24,4 +45,19 @@
 
 li {
   cursor: pointer;
+  background-color: transparent;
+}
+
+ul {
+  background-color: transparent;
+}
+
+.trans {
+  background-color: transparent;
+}
+
+.ip2 {
+  background-color: #36393E;
+  border-color: #ebebeb;
+  border-radius: 0.3rem;
 }
